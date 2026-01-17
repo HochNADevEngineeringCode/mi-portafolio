@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Portfolio - Hoch N.A | Dev-Engineering & Code</title>
+</head>
+<body>
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="./img/perfil.jpg" alt="Nahuel">
+            </div>
+            <div class="signature-top"><span>Hoch [N.A]</span></div>
+            <div class="signature-bottom"><span>{ Dev-Engineering & Code }</span></div>
+            <h4>Técnico Mecánico / Electricista Industrial / Programador en Frontend</h4>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/TU_USUARIO" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Nahuel Hochnadel.</span> Soy un Técnico con muy buenos honores/Habilidades, especializado en electricidad industrial/Doméstica, Tornería Manual/CNC y Diseñador 2D/3D de Piezas o Planos de estructuras como casas-edificios. Actualmente enfocado en el desarrollo full-stack para fusionar el mundo físico con el digital y tratando de siempre mejorar, ayudar y desarrollar mejores sistemas.</p>
+        </div>
+    </section>
+
+    <section id="habilidades-industrial" class="sobremi">
+        <h2 class="section-title">En la parte Industrial Sé Manejar:</h2>
+        <div class="contenedor-skills-vertical">
+            <h3 class="skill-ind-electricidad"><i class="fa-solid fa-bolt"></i> Electricidad Domiciliaria/Industrial.</h3>
+            <h3 class="skill-ind-motores"><i class="fa-solid fa-gears"></i> Mecánica Base de Motores.</h3>
+            <h3 class="skill-ind-torneria"><i class="fa-solid fa-screwdriver-wrench"></i> Mecanizados en Tornería Manual/CNC.</h3>
+            <h3 class="skill-ind-diseno"><i class="fa-solid fa-compass-drafting"></i> Diseño 3D/2D.</h3>
+        </div>
+        <p style="font-size: 1.1em; margin-top: 20px;">Soy Muy Bueno en estas Áreas y siempre hay algo nuevo que aprender.</p>
+    </section>
+
+    <section id="habilidades-programacion" class="sobremi">
+        <h2 class="section-title">En el apartado de Programas Sé Manejar:</h2>
+        <div class="contenedor-skills-horizontal">
+            <h3 class="skill-python"><i class="fa-brands fa-python"></i> Python.</h3>
+            <h3 class="skill-html"><i class="fa-brands fa-html5"></i> HTML.</h3>
+            <h3 class="skill-css"><i class="fa-brands fa-css3-alt"></i> CSS.</h3>
+            <h3 class="skill-js"><i class="fa-brands fa-js"></i> JavaScript.</h3>
+        </div>
+        <p style="font-size: 1.1em; margin-top: 20px;">También me gusta seguir mejorando mis capacidades y aprender nuevos lenguajes.</p>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2 class="section-title">MIS PROYECTOS</h2>
+            <div class="galeria">
+                <div class="proyecto" onclick="abrirProyecto('electricidad')">
+                    <img src="./img/tablero.jpg" alt="Instalaciones Eléctricas">
+                    <div class="overlay"><h3>Instalaciones Eléctricas</h3><p>Click para ver detalles</p></div>
+                </div>
+                <div class="proyecto" onclick="abrirProyecto('mecanizado')">
+                    <img src="./img/torno_cnc.jpg" alt="Mecanizado CNC">
+                    <div class="overlay"><h3>Mecanizado de Precisión</h3><p>Click para ver detalles</p></div>
+                </div>
+                <div class="proyecto" onclick="abrirProyecto('diseno')">
+                    <img src="./img/diseño3d.jpg" alt="Diseños 3D">
+                    <div class="overlay"><h3>Diseños 3D / 2D</h3><p>Click para ver detalles</p></div>
+                </div>
+                <div class="proyecto" onclick="abrirProyecto('frontend')">
+                    <img src="./img/desarrollo.jpg" alt="Programación Frontend">
+                    <div class="overlay">
+                        <h3>Programación & Frontend</h3>
+                        <p>Click para ver detalles</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="modalProyecto" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarProyecto()">&times;</span>
+            <div id="infoProyecto"></div>
+        </div>
+    </div>
+
+    <section id="contacto" class="sobremi">
+        <div class="contenido-seccion">
+            <h2 class="section-title">CONTACTO</h2>
+            <div class="contenedor-skills-vertical">
+                <h3 class="skill-js"><i class="fa-solid fa-envelope"></i> Email: <span style="color: white; font-weight: 400;">angelnahuel1215@gmail.com</span></h3>
+                <h3 class="skill-css"><i class="fa-solid fa-location-dot"></i> Ubicación: <span style="color: white; font-weight: 400;">Argentina, Entre Ríos, Hernandarias</span></h3>
+                <h3 class="skill-python"><i class="fa-brands fa-github"></i> GitHub: <a href="https://github.com/HochNADevEngineeringCode" target="_blank" style="color: white; text-decoration: none; font-weight: 400;"> ver mis repositorios</a></h3>
+                <h3 style="color: #555;"><i class="fa-solid fa-phone"></i> Teléfono: <span style="font-size: 0.8em;">(Próximamente)</span></h3>
+                <div class="contenedor-skills-horizontal" style="margin-top: 10px;">
+                    <h3 style="color: #29b8f0;"><i class="fa-brands fa-facebook"></i></h3> Facebook: <a href="https://www.facebook.com/share/1Hc14Hg5BQ/" target="_blank" style="color: white; text-decoration: none; font-weight: 400;"> ver mi Facebook</a></h3>
+                    <h3 style="color: #555;"><i class="fa-brands fa-instagram"></i></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
